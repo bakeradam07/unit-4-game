@@ -1,0 +1,64 @@
+body {
+    background-image: url("../images/rainingmoney.jpg");
+    background-repeat: repeat-x repeat-y;
+}
+
+#title {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+#rules {
+    background-color: green;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.ranNum {
+    width: 25%;
+    height: 200px;
+    background-color: tan;
+    float: left;
+}
+
+.score {
+    background-color: teal;
+    width: 15%;
+    height: 200px;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.wins {
+    padding: 20px;
+}
+.losses {
+    padding: 20px;
+}
+
+.images {
+    clear: left;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.totalScore {
+    background: white;
+    width: 15%;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.totalScoreNumber {
+    background: white;
+    width: 25%;
+    height: 200px;
+}
