@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
     <div id="title">
@@ -32,16 +33,20 @@
         <br><br>
         <div class="losses">Losses: </div>
     </div>
+    
     <div class="images">
-        <img src="assets/images/bluecrystal.jpg">
-        <img src="assets/images/pinkcrystal.jpg">
-        <img src="assets/images/purplecrystal.jpg">
-        <img src="assets/images/rainbowcrystal.jpg">
+        <img id="crystal1" src="assets/images/bluecrystal.jpg">
+        <img id="crystal2" src="assets/images/pinkcrystal.jpg">
+        <img id="crystal3" src="assets/images/purplecrystal.jpg">
+        <img id="crystal4" src="assets/images/rainbowcrystal.jpg">
     </div>
     <div class="totalScore">
         <div>Your Total Score is: </div>
     </div>
     <br>
     <div class="totalScoreNumber"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

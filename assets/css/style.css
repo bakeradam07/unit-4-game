@@ -9,6 +9,7 @@ body {
     padding: 20px;
     width: 50%;
     text-align: center;
+    font-size: 30px;
 }
 
 #rules {
@@ -16,7 +17,7 @@ body {
     color: white;
     width: 50%;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .ranNum {
@@ -24,6 +25,17 @@ body {
     height: 200px;
     background-color: tan;
     float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+.totalScoreNumber {
+    width: 25%;
+    height: 200px;
+    background-color: tan;
+    float: left;
+    font-size: 50px;
+    text-align: center;
 }
 
 .score {
@@ -60,5 +72,5 @@ img {
 .totalScoreNumber {
     background: white;
     width: 25%;
-    height: 200px;
+    height: 100px;
 }
