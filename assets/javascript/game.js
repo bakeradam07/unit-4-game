@@ -24,33 +24,37 @@ $(document).ready(function() {
 	  
 	
 	//Displays the user's score  
-	$(".totalScoreNumber").text(userScore);
+	$(".totalScoreNumber").html(userScore);
 	
 	// //console.log(randPick);
-	//   console.log(crystal1);
-	//   console.log(crystal2);
-	//   console.log(crystal3);
-	//   console.log(crystal4);
-  
-	// resets the values of the game
+	  console.log(crystal1);
+	  console.log(crystal2);
+	  console.log(crystal3);
+	  console.log(crystal4);
+
+	  // resets the values of the game
 	function resetGame() {
-	  userScore = 0;
-	  var randPick = Math.floor(Math.random() * 102) + 19; 
+		userScore = 0;
+		var randPick = Math.floor(Math.random() * 102) + 19; 
 		console.log(randPick); 
 		$(".ranNum").html(randPick);
-		var crystal1 = Math.floor(Math.random() * 12) + 1;
-		var crystal2 = Math.floor(Math.random() * 12) + 1;
-		var crystal3 = Math.floor(Math.random() * 12) + 1;
-		var crystal4 = Math.floor(Math.random() * 12) + 1;
-	 
-	//Displays the user's score
-	  $(".totalScoreNumber").text(userScore);
-	//   console.log(randPick);
-	//   console.log(crystal1);
-	//   console.log(crystal2);
-	//   console.log(crystal3);
-	//   console.log(crystal4);
-	}
+
+	// creates values for each crystal, a random number between 1-12 
+	  crystal1 = Math.floor(Math.random() * 12) + 1;
+	  crystal2 = Math.floor(Math.random() * 12) + 1;
+	  crystal3 = Math.floor(Math.random() * 12) + 1;
+	  crystal4 = Math.floor(Math.random() * 12) + 1;
+	  
+	
+	//Displays the user's score  
+	$(".totalScoreNumber").html(userScore);
+	
+	// //console.log(randPick);
+	  console.log(crystal1);
+	  console.log(crystal2);
+	  console.log(crystal3);
+	  console.log(crystal4);
+	  }	
   
 	// creates function for a game win
 	function winGame() {
@@ -69,7 +73,7 @@ $(document).ready(function() {
 	}
   
 	// creates on click function for crystal 1
-	$("#crystal1").click(function() {
+	$("#crystal1").on("click", function() {
 	  userScore = userScore + crystal1;
 	  console.log(userScore);
 	  $(".totalScoreNumber").html(userScore);
@@ -81,10 +85,10 @@ $(document).ready(function() {
 	});
   
 	// creates on click function for crystal 2
-	$("#crystal2").click(function() {
+	$("#crystal2").on("click", function() {
 	  userScore = userScore + crystal2;
 	  console.log(userScore);
-	  $(".totalScoreNumber").text(userScore);
+	  $(".totalScoreNumber").html(userScore);
 	  if (userScore === randPick) {
 		winGame();
 	  } else if (userScore > randPick) {
@@ -93,10 +97,10 @@ $(document).ready(function() {
 	});
   
 	// creates on click function for crystal 3
-	$("#crystal3").click(function() {
+	$("#crystal3").on("click", function() {
 	  userScore = userScore + crystal3;
 	  console.log(userScore);
-	  $(".totalScoreNumber").text(userScore);
+	  $(".totalScoreNumber").html(userScore);
 	  if (userScore === randPick) {
 		winGame();
 	  } else if (userScore > randPick) {
@@ -105,15 +109,17 @@ $(document).ready(function() {
 	});
   
 	// creates on click function for crystal 4
-	$("#crystal4").click(function() {
+	$("#crystal4").on("click", function() {
 	  userScore = userScore + crystal4;
 	  console.log(userScore);
-	  $(".totalScoreNumber").text(userScore);
+	  $(".totalScoreNumber").html(userScore);
 		if (userScore === randPick) {
 		  winGame();
 		} else if (userScore > randPick) {
 		  loseGame();
 		}
 	});
+
+	
   
   });
